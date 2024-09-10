@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project | Project: Recipes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            padding: 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .recipe-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 1em;
+            text-align: center;
+        }
+        .recipe-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .recipe-card h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .recipe-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ff6f61;
+            margin-bottom: 1em;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cooking Recipes</h1>
+    </header>
+    <main>
+        <div class="recipe-card">
+            <img src="path/to/image1.jpg" alt="Delicious Thai Beef Salad">
+            <a href="recipe1.html"><h2>Delicious Thai Beef Salad</h2></a>
+        </div>
+        <div class="recipe-card">
+            <img src="path/to/image2.jpg" alt="Our Favourite Lasagne">
+            <a href="recipe2.html"><h2>Our Favourite Lasagne</h2></a>
+        </div>
+        <div class="recipe-card">
+            <img src="path/to/image3.jpg" alt="Impossible Quiche">
+            <a href="recipe3.html"><h2>Impossible Quiche</h2></a>
+        </div>
+        <div class="recipe-card">
+            <img src="path/to/image4.jpg" alt="Classic Shepherd's Pie">
+            <a href="recipe4.html"><h2>Classic Shepherd's Pie</h2></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cooking Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
